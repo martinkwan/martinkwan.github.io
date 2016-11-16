@@ -1,0 +1,658 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/**
+ * ==============================================================
+ * Nav bar
+ * ==============================================================
+ */
+
+.navbar-custom {
+  background: #004D40;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+}
+.navbar-custom a:focus {
+  outline: none;
+}
+.navbar-custom .navbar-brand {
+  color: white;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand:active,
+.navbar-custom .navbar-brand.active {
+  color: white;
+}
+.navbar-custom .navbar-nav {
+  letter-spacing: 1px;
+}
+.navbar-custom .navbar-nav li a {
+  color: white;
+}
+.navbar-custom .navbar-nav li a:hover {
+  color: #26A69A;
+  outline: none;
+}
+.navbar-custom .navbar-nav li a:focus,
+.navbar-custom .navbar-nav li a:active {
+  color: white;
+}
+.navbar-custom .navbar-nav li.active a {
+  color: white;
+  background: #26A69A;
+}
+.navbar-custom .navbar-nav li.active a:hover,
+.navbar-custom .navbar-nav li.active a:focus,
+.navbar-custom .navbar-nav li.active a:active {
+  color: white;
+  background: #26A69A;
+}
+.navbar-custom .navbar-toggle {
+  color: white;
+  text-transform: uppercase;
+  font-size: 10px;
+  border-color: white;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #26A69A;
+  color: white;
+  border-color: #26A69A;
+}
+/**
+ * To make navbar bigger in beginning
+ */
+/*@media (min-width: 768px) {
+  .navbar-custom {
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+  }
+  .navbar-custom .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .navbar-custom.affix {
+    padding: 10px 0;
+  }
+  .navbar-custom.affix .navbar-brand {
+    font-size: 1.5em;
+  }
+}*/
+
+/**
+ * ==============================================================
+ * Header
+ * ==============================================================
+ */
+
+header {
+  text-align: center;
+  background: #26A69A;
+  color: white;
+  height: 100%;
+}
+header .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+header img {
+  /*display: block;*/
+  margin: 0 auto 20px;
+  border-radius: 50%;
+}
+header .intro-text .name {
+  display: block;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2em;
+}
+header .intro-text .skills {
+  font-size: 1.25em;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  header .container {
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+  header .intro-text .name {
+    font-size: 4.75em;
+  }
+  header .intro-text .skills {
+    font-size: 1.75em;
+  }
+}
+
+#bg {
+  -moz-animation: bg 60s linear infinite;
+  -webkit-animation: bg 60s linear infinite;
+  -ms-animation: bg 60s linear infinite;
+  animation: bg 60s linear infinite;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+
+  /* Set your background with this */
+
+  background: #348cb2 url("../img/bg.jpg") bottom left;
+  background-repeat: repeat-x;
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+}
+
+	@-moz-keyframes bg {
+		0% {
+			-moz-transform: translate3d(0,0,0);
+			-webkit-transform: translate3d(0,0,0);
+			-ms-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+
+		100% {
+			-moz-transform: translate3d(-2250px,0,0);
+			-webkit-transform: translate3d(-2250px,0,0);
+			-ms-transform: translate3d(-2250px,0,0);
+			transform: translate3d(-2250px,0,0);
+		}
+	}
+
+	@-webkit-keyframes bg {
+		0% {
+			-moz-transform: translate3d(0,0,0);
+			-webkit-transform: translate3d(0,0,0);
+			-ms-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+
+		100% {
+			-moz-transform: translate3d(-2250px,0,0);
+			-webkit-transform: translate3d(-2250px,0,0);
+			-ms-transform: translate3d(-2250px,0,0);
+			transform: translate3d(-2250px,0,0);
+		}
+	}
+
+	@-ms-keyframes bg {
+		0% {
+			-moz-transform: translate3d(0,0,0);
+			-webkit-transform: translate3d(0,0,0);
+			-ms-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+
+		100% {
+			-moz-transform: translate3d(-2250px,0,0);
+			-webkit-transform: translate3d(-2250px,0,0);
+			-ms-transform: translate3d(-2250px,0,0);
+			transform: translate3d(-2250px,0,0);
+		}
+	}
+
+	@keyframes bg {
+		0% {
+			-moz-transform: translate3d(0,0,0);
+			-webkit-transform: translate3d(0,0,0);
+			-ms-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+
+		100% {
+			-moz-transform: translate3d(-2250px,0,0);
+			-webkit-transform: translate3d(-2250px,0,0);
+			-ms-transform: translate3d(-2250px,0,0);
+			transform: translate3d(-2250px,0,0);
+		}
+	}
+
+	#bg {
+		background-size: 2250px auto;
+		width: 6750px;
+	}
+
+
+
+section {
+  padding: 100px 0;
+}
+section h2 {
+  margin: 0;
+  font-size: 3em;
+}
+section.success {
+  background: #26A69A;
+  color: white;
+}
+@media (max-width: 767px) {
+  section {
+    padding: 75px 0;
+  }
+  section.first {
+    padding-top: 75px;
+  }
+}
+#portfolio .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#portfolio .portfolio-item .portfolio-link .caption {
+  background: rgba(38, 166, 154, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+  opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+  margin-top: -12px;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+  margin: 0;
+}
+#portfolio * {
+  z-index: 2;
+}
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+
+/**
+ * Media queries for moving background
+ */
+
+/* Wide */
+
+@media screen and (max-width: 1680px) {
+
+	/* Basic */
+
+		body, input, select, textarea {
+			font-size: 13pt;
+		}
+
+	/* BG */
+
+		@-moz-keyframes bg {
+			0% {
+				-moz-transform: translate3d(0,0,0);
+				-webkit-transform: translate3d(0,0,0);
+				-ms-transform: translate3d(0,0,0);
+				transform: translate3d(0,0,0);
+			}
+
+			100% {
+				-moz-transform: translate3d(-1500px,0,0);
+				-webkit-transform: translate3d(-1500px,0,0);
+				-ms-transform: translate3d(-1500px,0,0);
+				transform: translate3d(-1500px,0,0);
+			}
+
+}
+
+	@-webkit-keyframes bg {
+		0% {
+			-moz-transform: translate3d(0,0,0);
+			-webkit-transform: translate3d(0,0,0);
+			-ms-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+
+		100% {
+			-moz-transform: translate3d(-1500px,0,0);
+			-webkit-transform: translate3d(-1500px,0,0);
+			-ms-transform: translate3d(-1500px,0,0);
+			transform: translate3d(-1500px,0,0);
+		}
+		}
+
+	@-ms-keyframes bg {
+		0% {
+			-moz-transform: translate3d(0,0,0);
+			-webkit-transform: translate3d(0,0,0);
+			-ms-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+
+		100% {
+			-moz-transform: translate3d(-1500px,0,0);
+			-webkit-transform: translate3d(-1500px,0,0);
+			-ms-transform: translate3d(-1500px,0,0);
+			transform: translate3d(-1500px,0,0);
+		}
+	}
+
+	@keyframes bg {
+		0% {
+			-moz-transform: translate3d(0,0,0);
+			-webkit-transform: translate3d(0,0,0);
+			-ms-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+
+		100% {
+			-moz-transform: translate3d(-1500px,0,0);
+			-webkit-transform: translate3d(-1500px,0,0);
+			-ms-transform: translate3d(-1500px,0,0);
+			transform: translate3d(-1500px,0,0);
+		}
+	}
+
+	#bg {
+		background-size: 1500px auto;
+		width: 4500px;
+	}
+}
+
+/* Normal */
+
+@media screen and (max-width: 1680px) {
+
+	/* Basic */
+
+	body, input, select, textarea {
+		font-size: 12pt;
+	}
+
+	/* BG */
+
+	@-moz-keyframes bg {
+		0% {
+			-moz-transform: translate3d(0,0,0);
+			-webkit-transform: translate3d(0,0,0);
+			-ms-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+
+		100% {
+			-moz-transform: translate3d(-750px,0,0);
+			-webkit-transform: translate3d(-750px,0,0);
+			-ms-transform: translate3d(-750px,0,0);
+			transform: translate3d(-750px,0,0);
+		}
+}
+
+	@-webkit-keyframes bg {
+  	0% {
+  		-moz-transform: translate3d(0,0,0);
+  		-webkit-transform: translate3d(0,0,0);
+  		-ms-transform: translate3d(0,0,0);
+  		transform: translate3d(0,0,0);
+  	}
+
+  	100% {
+  		-moz-transform: translate3d(-750px,0,0);
+  		-webkit-transform: translate3d(-750px,0,0);
+  		-ms-transform: translate3d(-750px,0,0);
+  		transform: translate3d(-750px,0,0);
+  	}
+	}
+
+	@-ms-keyframes bg {
+		0% {
+			-moz-transform: translate3d(0,0,0);
+			-webkit-transform: translate3d(0,0,0);
+			-ms-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+
+		100% {
+			-moz-transform: translate3d(-750px,0,0);
+			-webkit-transform: translate3d(-750px,0,0);
+			-ms-transform: translate3d(-750px,0,0);
+			transform: translate3d(-750px,0,0);
+		}
+	}
+
+	@keyframes bg {
+		0% {
+			-moz-transform: translate3d(0,0,0);
+			-webkit-transform: translate3d(0,0,0);
+			-ms-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+
+		100% {
+			-moz-transform: translate3d(-750px,0,0);
+			-webkit-transform: translate3d(-750px,0,0);
+			-ms-transform: translate3d(-750px,0,0);
+			transform: translate3d(-750px,0,0);
+		}
+	}
+
+	#bg {
+		background-size: 750px auto;
+		width: 2250px;
+	}
+}
+
+/* Mobile */
+
+@media screen and (max-width: 736px) {
+
+	/* Basic */
+
+	body {
+		min-width: 320px;
+	}
+
+	body, input, select, textarea {
+		font-size: 11pt;
+	}
+
+	/* BG */
+
+	@-moz-keyframes bg {
+		0% {
+			-moz-transform: translate3d(0,0,0);
+			-webkit-transform: translate3d(0,0,0);
+			-ms-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+
+		100% {
+			-moz-transform: translate3d(-300px,0,0);
+			-webkit-transform: translate3d(-300px,0,0);
+			-ms-transform: translate3d(-300px,0,0);
+			transform: translate3d(-300px,0,0);
+		}
+
+}
+
+	@-webkit-keyframes bg {
+		0% {
+			-moz-transform: translate3d(0,0,0);
+			-webkit-transform: translate3d(0,0,0);
+			-ms-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+
+		100% {
+			-moz-transform: translate3d(-300px,0,0);
+			-webkit-transform: translate3d(-300px,0,0);
+			-ms-transform: translate3d(-300px,0,0);
+			transform: translate3d(-300px,0,0);
+		}
+		}
+
+	@-ms-keyframes bg {
+		0% {
+			-moz-transform: translate3d(0,0,0);
+			-webkit-transform: translate3d(0,0,0);
+			-ms-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+
+		100% {
+			-moz-transform: translate3d(-300px,0,0);
+			-webkit-transform: translate3d(-300px,0,0);
+			-ms-transform: translate3d(-300px,0,0);
+			transform: translate3d(-300px,0,0);
+		}
+	}
+
+	@keyframes bg {
+		0% {
+			-moz-transform: translate3d(0,0,0);
+			-webkit-transform: translate3d(0,0,0);
+			-ms-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+
+		100% {
+			-moz-transform: translate3d(-300px,0,0);
+			-webkit-transform: translate3d(-300px,0,0);
+			-ms-transform: translate3d(-300px,0,0);
+			transform: translate3d(-300px,0,0);
+		}
+	}
+
+	#bg {
+		background-size: 300px auto;
+		width: 900px;
+	}
+
+/* Header */
+
+	#header h1 {
+		font-size: 2.5em;
+	}
+
+	#header p {
+		font-size: 1em;
+	}
+
+	#header nav {
+		font-size: 1em;
+	}
+
+	#header nav a:hover {
+		font-size: 1em;
+	}
+
+	#header nav a:active {
+		font-size: 1em;
+	}
+}
+
+/* Mobile (Portrait) */
+
+@media screen and (max-width: 480px) {
+
+/* BG */
+
+	@-moz-keyframes bg {
+		0% {
+			-moz-transform: translate3d(0,0,0);
+			-webkit-transform: translate3d(0,0,0);
+			-ms-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+
+		100% {
+			-moz-transform: translate3d(-412.5px,0,0);
+			-webkit-transform: translate3d(-412.5px,0,0);
+			-ms-transform: translate3d(-412.5px,0,0);
+			transform: translate3d(-412.5px,0,0);
+		}
+  }
+
+  @-webkit-keyframes bg {
+  	0% {
+  		-moz-transform: translate3d(0,0,0);
+  		-webkit-transform: translate3d(0,0,0);
+  		-ms-transform: translate3d(0,0,0);
+  		transform: translate3d(0,0,0);
+  	}
+
+  	100% {
+  		-moz-transform: translate3d(-412.5px,0,0);
+  		-webkit-transform: translate3d(-412.5px,0,0);
+  		-ms-transform: translate3d(-412.5px,0,0);
+  		transform: translate3d(-412.5px,0,0);
+  	}
+  	}
+
+  @-ms-keyframes bg {
+  	0% {
+  		-moz-transform: translate3d(0,0,0);
+  		-webkit-transform: translate3d(0,0,0);
+  		-ms-transform: translate3d(0,0,0);
+  		transform: translate3d(0,0,0);
+  	}
+
+  	100% {
+  		-moz-transform: translate3d(-412.5px,0,0);
+  		-webkit-transform: translate3d(-412.5px,0,0);
+  		-ms-transform: translate3d(-412.5px,0,0);
+  		transform: translate3d(-412.5px,0,0);
+  	}
+  }
+
+  @keyframes bg {
+  	0% {
+  		-moz-transform: translate3d(0,0,0);
+  		-webkit-transform: translate3d(0,0,0);
+  		-ms-transform: translate3d(0,0,0);
+  		transform: translate3d(0,0,0);
+  	}
+
+  	100% {
+  		-moz-transform: translate3d(-412.5px,0,0);
+  		-webkit-transform: translate3d(-412.5px,0,0);
+  		-ms-transform: translate3d(-412.5px,0,0);
+  		transform: translate3d(-412.5px,0,0);
+  	}
+  }
+
+  #bg {
+  	background-size: 412.5px auto;
+  	width: 1237.5px;
+  }
+
+  /* Header */
+
+  #header nav {
+  	padding: 0 1em;
+  }
+}
