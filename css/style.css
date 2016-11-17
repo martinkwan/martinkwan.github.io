@@ -7,6 +7,12 @@ html,body{
   height:100%;
 }
 
+@media screen and (orientation:landscape){
+  header img {
+    width:16%;
+  }
+}
+
 /**
  * ==============================================================
  * Nav bar
@@ -68,29 +74,7 @@ html,body{
   color: white;
   border-color: #248fce;
 }
-/**
- * To make navbar bigger in beginning
- */
-/*@media (min-width: 768px) {
-  .navbar-custom {
-    padding: 25px 0;
-    -webkit-transition: padding 0.3s;
-    -moz-transition: padding 0.3s;
-    transition: padding 0.3s;
-  }
-  .navbar-custom .navbar-brand {
-    font-size: 2em;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  .navbar-custom.affix {
-    padding: 10px 0;
-  }
-  .navbar-custom.affix .navbar-brand {
-    font-size: 1.5em;
-  }
-}*/
+
 
 /**
  * ==============================================================
@@ -142,10 +126,7 @@ header .intro-text .skills {
  * Moving background
  * ==============================================================
  */
-#wrapper{
-  width:100%;
-  position:relative;
-}
+
 #bg {
   -moz-animation: bg 50s linear infinite;
   -webkit-animation: bg 50s linear infinite;
@@ -160,7 +141,6 @@ header .intro-text .skills {
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 
-  /* Set your background with this */
 
   background: #248fce url("../img/bg.jpg") bottom left;
   background-repeat: repeat-x;
