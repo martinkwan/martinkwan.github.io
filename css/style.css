@@ -142,6 +142,7 @@ header .intro-text .skills {
  */
 #wrapper{
   width:100%;
+  position:relative;
 }
 #bg {
   -moz-animation: bg 60s linear infinite;
