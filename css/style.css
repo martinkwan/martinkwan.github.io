@@ -10,7 +10,7 @@ body {
  */
 
 .navbar-custom {
-  background: #004D40;
+  background: #01579B;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -35,7 +35,7 @@ body {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #26A69A;
+  color: #248fce;
   outline: none;
 }
 .navbar-custom .navbar-nav li a:focus,
@@ -44,13 +44,13 @@ body {
 }
 .navbar-custom .navbar-nav li.active a {
   color: white;
-  background: #26A69A;
+  background: #248fce;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
   color: white;
-  background: #26A69A;
+  background: #248fce;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -60,9 +60,9 @@ body {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #26A69A;
+  background-color: #248fce;
   color: white;
-  border-color: #26A69A;
+  border-color: #248fce;
 }
 /**
  * To make navbar bigger in beginning
@@ -96,7 +96,7 @@ body {
 
 header {
   text-align: center;
-  background: #26A69A;
+  background: white;
   color: white;
   height: 100%;
 }
@@ -236,7 +236,7 @@ header .intro-text .skills {
 
 /**
  * ==============================================================
- * Portfolio
+ * Portfolio and Resume grid
  * ==============================================================
  */
 
@@ -248,8 +248,11 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #26A69A;
+  background: #248fce;
   color: white;
+}
+section.resume{
+  background: white;
 }
 @media (max-width: 767px) {
   section {
@@ -259,18 +262,27 @@ section.success {
     padding-top: 75px;
   }
 }
-#portfolio .portfolio-item {
+
+#portfolio .portfolio-item,
+#resume .resume-item {
   margin: 0 0 15px;
   right: 0;
 }
-#portfolio .portfolio-item .portfolio-link {
+#portfolio .portfolio-item .portfolio-link,
+#resume .resume-item .resume-link {
   display: block;
   position: relative;
   max-width: 400px;
   margin: 0 auto;
 }
-#portfolio .portfolio-item .portfolio-link .caption {
-  background: rgba(38, 166, 154, 0.9);
+#portfolio .portfolio-item .portfolio-link {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #248fce;
+}
+#portfolio .portfolio-item .portfolio-link .caption,
+#resume .resume-item .resume-link .caption {
+  background: rgba(36, 143, 206, 0.5);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -279,10 +291,12 @@ section.success {
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
 }
-#portfolio .portfolio-item .portfolio-link .caption:hover {
+#portfolio .portfolio-item .portfolio-link .caption:hover,
+#resume .resume-item .resume-link .caption:hover {
   opacity: 1;
 }
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+#portfolio .portfolio-item .portfolio-link .caption .caption-content,
+#resume .resume-item .resume-link .caption .caption-content {
   position: absolute;
   width: 100%;
   height: 20px;
@@ -303,9 +317,13 @@ section.success {
   z-index: 2;
 }
 @media (min-width: 767px) {
-  #portfolio .portfolio-item {
+  #portfolio .portfolio-item, #resume .resume-item {
     margin: 0 0 30px;
   }
+}
+
+.resume-link img {
+  margin: 0 auto;
 }
 
 /**
@@ -322,14 +340,14 @@ footer h3 {
 }
 footer .footer-above {
   padding-top: 50px;
-  background-color: #004D40;
+  background-color: #01579B;
 }
 footer .footer-col {
   margin-bottom: 50px;
 }
 footer .footer-below {
   padding: 25px 0;
-  background-color: #00332b;
+  background-color: #014982;
 }
 
 /**
@@ -350,14 +368,14 @@ footer .footer-below {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: #26A69A;
+  color: #248fce;
   background: white;
   border: solid 2px white;
 }
 .btn-primary {
   color: white;
-  background-color: #004D40;
-  border-color: #004D40;
+  background-color: #01579B;
+  border-color: #01579B;
   font-weight: 700;
 }
 .btn-primary:hover,
@@ -389,17 +407,17 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #004D40;
-  border-color: #004D40;
+  background-color: #01579B;
+  border-color: #01579B;
 }
 .btn-primary .badge {
-  color: #004D40;
+  color: #01579B;
   background-color: white;
 }
 .btn-success {
   color: white;
-  background-color: #26A69A;
-  border-color: #26A69A;
+  background-color: #248fce;
+  border-color: #248fce;
   font-weight: 700;
 }
 .btn-success:hover,
@@ -431,11 +449,11 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #26A69A;
-  border-color: #26A69A;
+  background-color: #248fce;
+  border-color: #248fce;
 }
 .btn-success .badge {
-  color: #26A69A;
+  color: #248fce;
   background-color: white;
 }
 .btn-social {
@@ -507,7 +525,7 @@ fieldset[disabled] .btn-success.active {
   height: 75px;
   width: 1px;
   margin-left: 35px;
-  background-color: #004D40;
+  background-color: #01579B;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -518,7 +536,7 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
-  background-color: #004D40;
+  background-color: #01579B;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */
