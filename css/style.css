@@ -11,7 +11,7 @@ html,body{
   header img {
     width:16%;
   }
-  header .container{
+  body header .container{
     padding-top:75px;
   }
 }
