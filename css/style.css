@@ -2,6 +2,7 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
   width: 100%;
+
 }
 
 /**
@@ -139,7 +140,9 @@ header .intro-text .skills {
  * Moving background
  * ==============================================================
  */
-
+#wrapper{
+  width:100%;
+}
 #bg {
   -moz-animation: bg 60s linear infinite;
   -webkit-animation: bg 60s linear infinite;
@@ -156,7 +159,6 @@ header .intro-text .skills {
 
   /* Set your background with this */
 
-  /*background: #348cb2 url("../img/bg.jpg") bottom left;*/
   background: #248fce url("../img/bg.jpg") bottom left;
   background-repeat: repeat-x;
   height: 100%;
