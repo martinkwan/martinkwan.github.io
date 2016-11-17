@@ -1,5 +1,5 @@
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
   width: 100%;
 
@@ -13,7 +13,7 @@ body {
 
 .navbar-custom {
   background: #01579B;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   border: none;
@@ -113,7 +113,7 @@ header img {
 }
 header .intro-text .name {
   display: block;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2em;
@@ -145,10 +145,10 @@ header .intro-text .skills {
   position:relative;
 }
 #bg {
-  -moz-animation: bg 60s linear infinite;
-  -webkit-animation: bg 60s linear infinite;
-  -ms-animation: bg 60s linear infinite;
-  animation: bg 60s linear infinite;
+  -moz-animation: bg 50s linear infinite;
+  -webkit-animation: bg 50s linear infinite;
+  -ms-animation: bg 50s linear infinite;
+  animation: bg 50s linear infinite;
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
