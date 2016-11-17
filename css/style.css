@@ -334,6 +334,10 @@ section.resume{
 
 .resume-link img {
   margin: 0 auto;
+  width:300px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #248fce;
 }
 
 /**
@@ -564,6 +568,14 @@ fieldset[disabled] .btn-success.active {
 }
 
 
+hr{
+  padding: 0;
+  border: none;
+  border-top: solid 3px;
+  text-align: center;
+  max-width: 250px;
+  margin: 25px auto 30px;
+}
 
 
 /**
