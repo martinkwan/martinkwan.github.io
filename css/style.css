@@ -894,8 +894,8 @@ hr{
 		animation: overlay 1.5s 1.5s forwards;
 		background-attachment: fixed, fixed;
 		background-image: url("../img/overlay-pattern.png"), url("../img/overlay.svg");
-		background-position: top left, center center;
-		background-repeat: repeat, no-repeat;
+		background-position: top left, bottom right;
+		background-repeat: repeat, repeat;
 		background-size: auto, cover;
 		height: 100%;
 		left: 0;
