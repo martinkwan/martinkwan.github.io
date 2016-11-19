@@ -22,13 +22,21 @@ html,body{
  * ==============================================================
  */
 
+@media (max-width: 767px) {
+  .navbar-collapse {
+    background: #01579B;
+  }
+}
+
 .navbar-custom {
-  background: #01579B;
-  /*background:transparent;*/
+  /*background: #01579B;*/
+  background:transparent;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   border: none;
+  transition: background 500ms;
+
 }
 .navbar-custom a:focus {
   outline: none;
@@ -46,10 +54,13 @@ html,body{
   letter-spacing: 1px;
 }
 .navbar-custom .navbar-nav li a {
-  color: white;
+  /*color: #E6E6E6;*/
+  color: #EBEDED;
+  /*color:white;*/
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #248fce;
+  /*color: #248fce;*/
+  color: white;
   outline: none;
 }
 .navbar-custom .navbar-nav li a:focus,
@@ -905,3 +916,49 @@ hr{
 		top: 0;
 		width: 100%;
 	}
+
+  /* Taken from hover.css
+  http://ianlunn.github.io/Hover/
+  */
+  /* Underline From Center */
+  .hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 7px;
+    background: white;
+    height: 2px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 10%;
+    right: 10%;
+  }
+  /* To render navbar-collapse correctly in mobile */
+  @media (max-width: 767px) {
+    .hvr-underline-from-center:before {
+      left: 5%;
+      right: 95%;
+      bottom: 0;
+    }
+    .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+      left: 2%;
+      right: 60%;
+    }
+  }
