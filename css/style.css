@@ -24,6 +24,7 @@ html,body{
 
 .navbar-custom {
   background: #01579B;
+  /*background:transparent;*/
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
