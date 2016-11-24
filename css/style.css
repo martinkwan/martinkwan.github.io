@@ -98,6 +98,19 @@ html,body{
  */
 
 header {
+  -moz-animation: header 1s 2.25s forwards;
+  -webkit-animation: header 1s 2.25s forwards;
+  -ms-animation: header 1s 2.25s forwards;
+  animation: header 1s 1.25s forwards;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  opacity: 0;
   text-align: center;
   background: transparent;
   color: white;
@@ -963,3 +976,299 @@ hr{
       right: 60%;
     }
   }
+
+
+/**
+ * Makes children of header appear slowly, in order
+ */
+
+   #page-top li {
+     -moz-animation: nav-icons 0.5s ease-in-out forwards;
+     -webkit-animation: nav-icons 0.5s ease-in-out forwards;
+     -ms-animation: nav-icons 0.5s ease-in-out forwards;
+     animation: nav-icons 0.5s ease-in-out forwards;
+     -moz-backface-visibility: hidden;
+     -webkit-backface-visibility: hidden;
+     -ms-backface-visibility: hidden;
+     backface-visibility: hidden;
+     -moz-transform: translate3d(0,0,0);
+     -webkit-transform: translate3d(0,0,0);
+     -ms-transform: translate3d(0,0,0);
+     transform: translate3d(0,0,0);
+     opacity: 0;
+   }
+
+  #page-top li:nth-child(1) {
+    -moz-animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+    -ms-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+  }
+
+  #page-top li:nth-child(2) {
+    -moz-animation-delay: 1.75s;
+    -webkit-animation-delay: 1.75s;
+    -ms-animation-delay: 1.75s;
+    animation-delay: 1.75s;
+  }
+
+  #page-top li:nth-child(3) {
+    -moz-animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    -ms-animation-delay: 2s;
+    animation-delay: 2s;
+  }
+
+  #page-top li:nth-child(4) {
+    -moz-animation-delay: 2.25s;
+    -webkit-animation-delay: 2.25s;
+    -ms-animation-delay: 2.25s;
+    animation-delay: 2.25s;
+  }
+
+  #page-top li:nth-child(5) {
+    -moz-animation-delay: 2.5s;
+    -webkit-animation-delay: 2.5s;
+    -ms-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+  }
+
+  #page-top li:nth-child(6) {
+    -moz-animation-delay: 3.75s;
+    -webkit-animation-delay: 3.75s;
+    -ms-animation-delay: 3.75s;
+    animation-delay: 3.75s;
+  }
+
+  #page-top li:nth-child(7) {
+    -moz-animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+    -ms-animation-delay: 3s;
+    animation-delay: 3s;
+  }
+
+  #page-top li:nth-child(8) {
+    -moz-animation-delay: 3.25s;
+    -webkit-animation-delay: 3.25s;
+    -ms-animation-delay: 3.25s;
+    animation-delay: 3.25s;
+  }
+
+  #page-top li:nth-child(9) {
+    -moz-animation-delay: 3.5s;
+    -webkit-animation-delay: 3.5s;
+    -ms-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+  }
+
+  #page-top li:nth-child(10) {
+    -moz-animation-delay: 3.75s;
+    -webkit-animation-delay: 3.75s;
+    -ms-animation-delay: 3.75s;
+    animation-delay: 3.75s;
+  }
+
+  #page-top ul a:before {
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+  /* Header */
+
+  	@-moz-keyframes header {
+  		0% {
+  			-moz-transform: translate3d(0,1em,0);
+  			-webkit-transform: translate3d(0,1em,0);
+  			-ms-transform: translate3d(0,1em,0);
+  			transform: translate3d(0,1em,0);
+  			opacity: 0;
+  		}
+
+  		100% {
+  			-moz-transform: translate3d(0,0,0);
+  			-webkit-transform: translate3d(0,0,0);
+  			-ms-transform: translate3d(0,0,0);
+  			transform: translate3d(0,0,0);
+  			opacity: 1;
+  		}
+  	}
+
+  	@-webkit-keyframes header {
+  		0% {
+  			-moz-transform: translate3d(0,1em,0);
+  			-webkit-transform: translate3d(0,1em,0);
+  			-ms-transform: translate3d(0,1em,0);
+  			transform: translate3d(0,1em,0);
+  			opacity: 0;
+  		}
+
+  		100% {
+  			-moz-transform: translate3d(0,0,0);
+  			-webkit-transform: translate3d(0,0,0);
+  			-ms-transform: translate3d(0,0,0);
+  			transform: translate3d(0,0,0);
+  			opacity: 1;
+  		}
+  	}
+
+  	@-ms-keyframes header {
+  		0% {
+  			-moz-transform: translate3d(0,1em,0);
+  			-webkit-transform: translate3d(0,1em,0);
+  			-ms-transform: translate3d(0,1em,0);
+  			transform: translate3d(0,1em,0);
+  			opacity: 0;
+  		}
+
+  		100% {
+  			-moz-transform: translate3d(0,0,0);
+  			-webkit-transform: translate3d(0,0,0);
+  			-ms-transform: translate3d(0,0,0);
+  			transform: translate3d(0,0,0);
+  			opacity: 1;
+  		}
+  	}
+
+  	@keyframes header {
+  		0% {
+  			-moz-transform: translate3d(0,1em,0);
+  			-webkit-transform: translate3d(0,1em,0);
+  			-ms-transform: translate3d(0,1em,0);
+  			transform: translate3d(0,1em,0);
+  			opacity: 0;
+  		}
+
+  		100% {
+  			-moz-transform: translate3d(0,0,0);
+  			-webkit-transform: translate3d(0,0,0);
+  			-ms-transform: translate3d(0,0,0);
+  			transform: translate3d(0,0,0);
+  			opacity: 1;
+  		}
+  	}
+
+  	@-moz-keyframes nav-icons {
+  		0% {
+  			-moz-transform: translate3d(0,1em,0);
+  			-webkit-transform: translate3d(0,1em,0);
+  			-ms-transform: translate3d(0,1em,0);
+  			transform: translate3d(0,1em,0);
+  			opacity: 0;
+  		}
+
+  		100% {
+  			-moz-transform: translate3d(0,0,0);
+  			-webkit-transform: translate3d(0,0,0);
+  			-ms-transform: translate3d(0,0,0);
+  			transform: translate3d(0,0,0);
+  			opacity: 1;
+  		}
+  	}
+
+  	@-webkit-keyframes nav-icons {
+  		0% {
+  			-moz-transform: translate3d(0,1em,0);
+  			-webkit-transform: translate3d(0,1em,0);
+  			-ms-transform: translate3d(0,1em,0);
+  			transform: translate3d(0,1em,0);
+  			opacity: 0;
+  		}
+
+  		100% {
+  			-moz-transform: translate3d(0,0,0);
+  			-webkit-transform: translate3d(0,0,0);
+  			-ms-transform: translate3d(0,0,0);
+  			transform: translate3d(0,0,0);
+  			opacity: 1;
+  		}
+  	}
+
+  	@-ms-keyframes nav-icons {
+  		0% {
+  			-moz-transform: translate3d(0,1em,0);
+  			-webkit-transform: translate3d(0,1em,0);
+  			-ms-transform: translate3d(0,1em,0);
+  			transform: translate3d(0,1em,0);
+  			opacity: 0;
+  		}
+
+  		100% {
+  			-moz-transform: translate3d(0,0,0);
+  			-webkit-transform: translate3d(0,0,0);
+  			-ms-transform: translate3d(0,0,0);
+  			transform: translate3d(0,0,0);
+  			opacity: 1;
+  		}
+  	}
+
+  	@keyframes nav-icons {
+  		0% {
+  			-moz-transform: translate3d(0,1em,0);
+  			-webkit-transform: translate3d(0,1em,0);
+  			-ms-transform: translate3d(0,1em,0);
+  			transform: translate3d(0,1em,0);
+  			opacity: 0;
+  		}
+
+  		100% {
+  			-moz-transform: translate3d(0,0,0);
+  			-webkit-transform: translate3d(0,0,0);
+  			-ms-transform: translate3d(0,0,0);
+  			transform: translate3d(0,0,0);
+  			opacity: 1;
+  		}
+  	}
+
+/* Wrapper - Makes whole body appear slighly slower with animation*/
+
+	@-moz-keyframes wrapper {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@-webkit-keyframes wrapper {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@-ms-keyframes wrapper {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@keyframes wrapper {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	#wrapper {
+		-moz-animation: wrapper 2s forwards;
+		-webkit-animation: wrapper 2s forwards;
+		-ms-animation: wrapper 2s forwards;
+		animation: wrapper 2s forwards;
+		height: 100%;
+		opacity: 0;
+		width: 100%;
+	}
