@@ -578,6 +578,10 @@ fieldset[disabled] .btn-success.active {
   display: none;
 }
 
+.portfolio-modal .tech-logo{
+  height:38px;
+}
+
 
 hr{
   padding: 0;
