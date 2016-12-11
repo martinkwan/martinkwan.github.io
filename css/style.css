@@ -350,6 +350,15 @@ section.resume{
   border-color: #248fce;
 }
 
+.gif{
+  margin: 0 auto;
+  border: inset 1px black;
+}
+
+.mobile-gif{
+  width: 50%;
+}
+
 /**
  * ==============================================================
  * Footer
