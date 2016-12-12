@@ -601,6 +601,14 @@ hr{
   margin: 25px auto 30px;
 }
 
+.small-hr{
+  padding: 0;
+  border: none;
+  border-top: solid 2px;
+  text-align: center;
+  max-width: 150px;
+  margin: 15px auto 30px;
+}
 
 /**
  * Media queries for moving background
