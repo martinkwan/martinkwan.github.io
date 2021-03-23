@@ -311,10 +311,6 @@ section.resume{
 	}
 }
 
-.resume-img-preview {
-	filter: blur(2px);
-}
-
 #portfolio .portfolio-item,
 #resume .resume-item {
   margin: 0 0 15px;
