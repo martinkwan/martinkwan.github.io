@@ -311,6 +311,9 @@ section.resume{
 	}
 }
 
+.resume-img-preview {
+	filter: blur(2px);
+}
 
 #portfolio .portfolio-item,
 #resume .resume-item {
