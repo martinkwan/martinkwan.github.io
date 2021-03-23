@@ -286,18 +286,31 @@ section.resume{
 /* * UPDATED CSS march 2021 */
 
 .portfolio-img-grid-item {
-  object-fit: cover; /* Do not scale the image */
+	object-fit: cover; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
   height: 200px;
+	/* Yahoo img width overflows if i dont set max width*/
+	max-width: 300px;
 }
 
 .portfolio-row {
 	display: flex;
+	overflow-x: scroll;
 }
 
+/* for some reason its not centered unless i do this*/
 .yahoo-img {
 	margin: 30px auto;
 }
+
+
+/* max width of img grid squares limited to prevent overflow at large widths */
+@media (min-width: 900px){
+	.portfolio-img-grid-item {
+		max-width: 100%;
+	}
+}
+
 
 #portfolio .portfolio-item,
 #resume .resume-item {
