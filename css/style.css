@@ -283,6 +283,22 @@ section.resume{
   }
 }
 
+/* * UPDATED CSS march 2021 */
+
+.portfolio-img-grid-item {
+  object-fit: cover; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  height: 200px;
+}
+
+.portfolio-row {
+	display: flex;
+}
+
+.yahoo-img {
+	margin: 30px auto;
+}
+
 #portfolio .portfolio-item,
 #resume .resume-item {
   margin: 0 0 15px;
